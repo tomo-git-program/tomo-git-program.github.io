@@ -1,0 +1,341 @@
+body{
+  font-size: 100%;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+#header .header-container{
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+}
+
+#header .header-container h1{
+  height: 80px;
+  padding: 0 128px;
+  background-color: white;
+}
+
+#header .header-container h1 > a{
+  font-size: 1.5rem;
+  font-weight: normal;
+  text-decoration: none;
+  line-height: 80px;
+  color: black;
+}
+#header .header-container ul{
+  display: flex;
+  padding: 12px 128px;
+  list-style: none;
+  text-align: left;
+  background-color: rgb(93, 93, 93);
+}
+
+#header .header-container ul > li{
+  margin-right: 64px;
+  width: 100%;
+}
+
+#header .header-container ul > li > a{
+  display: block;
+  text-decoration: none;
+  color: white;
+  width: 100%;
+}
+
+#main .main-top-container{
+  padding: 176px 128px 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#main .main-top-container > ul{
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+#main .main-top-container > ul > li{
+  display: flex;
+  flex-direction: column;
+  width: calc((100% / 3) - 24px -24px);
+}
+
+#main .main-top-container > ul > li > img{
+  width: 100%;
+}
+#main .main-top-container > ul > li > p{
+  margin-top: 12px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+#main .main-top-container > ul > li > a{
+  position: relative;
+  display: inline-block;
+  width: fit-content;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  margin: 12px auto 0;
+}
+#main .main-top-container > ul > li > a::after{
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background: black;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+}
+#main .main-top-container > ul > li > a:hover:after{
+  bottom: -4px;
+  opacity: 1;
+  visibility: visible; 
+}
+
+#main .main-mid-container{
+  padding: 0 120px;
+  margin-top: 84px;
+}
+#main .main-mid-container > .two-element-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#main .main-mid-container #secondary_main{
+  display: flex;
+  flex-direction: column;
+  width: calc((2 / 3) * 100%);
+  flex-wrap: wrap;
+}
+
+#main .main-mid-container #secondary_main .gallery{
+  text-align: left;
+}
+#main .main-mid-container #secondary_main .gallery a{
+  text-decoration: none;
+  color: black;
+}
+
+#main .main-mid-container #secondary_main .gallery .time-category{
+  margin-bottom: 12px;
+}
+
+#secondary_main .gallery > h1{
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+#secondary_main .gallery  time{
+  margin-right: 28px;
+}
+#secondary_main .gallery  img{
+  width: 100%;
+}
+#secondary_main .gallery  p{
+  padding: 8px 24px;
+  font-size: 1.1rem;
+}
+#secondary_main .gallery  + .gallery{
+  margin-top: 64px;
+}
+
+
+#secondary_main .gallery a.hover_animation{
+  position: relative;
+  display: block;
+  width: fit-content;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  margin: 64px auto 0;
+}
+
+#secondary_main .gallery a.hover_animation::after{
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background: black;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+}
+
+#secondary_main .gallery a.hover_animation:hover:after{
+  bottom: -4px;
+  opacity: 1;
+  visibility: visible; 
+}
+
+#inner_aside{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: calc((1 / 3) * 100%);
+}
+#inner_aside .aside_profile{
+  width: 100%;
+  padding: 0 36px;
+}
+#inner_aside .aside_profile > img{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  vertical-align: center;
+}
+#inner_aside .aside_profile > h3{
+  margin-top: 36px;
+}
+#inner_aside .aside_profile > p{
+  margin-top: 36px;
+  text-align: left;
+}
+#inner_aside .aside_profile > p{
+  margin-top: 36px;
+  text-align: left;
+}
+
+#inner_aside .ranking{
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+  padding: 0 36px;
+}
+#inner_aside .ranking ul{
+  margin-top: 32px;
+  list-style: none;
+  text-align: left;
+}
+
+#inner_aside .ranking a{
+  text-decoration: none;
+  color: black;
+}
+#inner_aside .ranking a + a{
+  margin-top: 24px;
+}
+#inner_aside .ranking img{
+  width: 100%;
+}
+
+#inner_aside .archive{
+  margin-top: 64px;
+  margin: 64px 36px;
+  display: flex;
+  flex-direction: column;
+}
+#inner_aside .archive dt{
+  text-align: center;
+  padding: 24px 0;
+  border-bottom: 1px solid black;
+}
+#inner_aside .archive dd{
+  padding: 24px 0px 24px 24px;
+  text-align: left;
+  border-bottom: 1px solid black;
+}
+#inner_aside .archive dd > a{
+  text-decoration: none;
+  color: black;
+}
+
+#footer{
+  text-align: left;
+  background-color: gainsboro;
+}
+#footer .footer-container{
+  margin-top: 48px;
+  padding: 48px 108px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+}
+#footer .footer-container section.about{
+  display: flex;
+  flex-direction: column;
+  /* width: calc((1 / 3) * 100%); */
+  flex: 1;
+}
+#footer section.about > p.text{
+  margin-top: 32px;
+}
+#footer section.about > p.business{
+  margin-top: 8px;
+}
+#footer section.about > p.business > a{
+  text-decoration: none;
+  color: black;
+}
+
+
+#footer .footer-container .about p > a::before{ 
+  /* 矢印を作っているとこ */
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin: 0 0.5em 0 0;
+  border: 5px solid transparent;
+  border-right: 0 solid transparent;
+  border-left: 8px solid #000;
+}
+
+#footer .footer-container section.menu{
+  display: flex;
+  flex-direction: column;
+  /* width: calc((1 / 3) * 100%); */
+  flex: 1;
+}
+#footer .footer-container section.menu  h3{
+  padding-bottom: 24px;
+  border-bottom: 1px solid black;
+}
+#footer .footer-container section.menu  dd{
+  padding: 16px 8px;
+  border-bottom: 1px solid black;
+}
+#footer .footer-container section.menu  a{
+  text-decoration: none;
+  color: black;
+}
+#footer .footer-container section.twitter{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+#footer .footer-container section.twitter h3{
+  margin-bottom: 24px;
+}
+#footer small{
+  display: block;
+  width: fit-content;
+  font-size: .9rem;
+  margin: 0 auto;
+  padding: 12px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
